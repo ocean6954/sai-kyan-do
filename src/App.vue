@@ -11,7 +11,7 @@ const { flashActive } = useTerrorMode()
 <template>
   <div class="app-root" :class="{ 'terror-flash': flashActive }">
     <main>
-      <h1>私は最強</h1>
+      <h1>1番ウザいTodoアプリ</h1>
       <TodoForm @add="addTodo" />
       <TodoList
         :todos="todos"

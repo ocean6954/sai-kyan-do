@@ -21,7 +21,7 @@ async function requestNotificationPermission() {
 
 function sendNotification(todo: Todo) {
   if ('Notification' in window && Notification.permission === 'granted') {
-    new Notification('⚠️ sai-kyan-do', {
+    new Notification('まだタスクやってないやつおる？', {
       body: `【期限超過】${todo.title} をやれ！！！`,
     })
   }
